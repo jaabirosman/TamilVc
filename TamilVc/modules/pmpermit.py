@@ -1,7 +1,7 @@
 from pyrogram import Client
 import asyncio
-from DaisyXMusic.config import SUDO_USERS
-from DaisyXMusic.config import PMPERMIT
+from TamilVc.config import SUDO_USERS
+from TamilVc.config import PMPERMIT
 from pyrogram import filters
 from pyrogram.types import Message
 from TamilVc.services.callsmusic import client as USER
