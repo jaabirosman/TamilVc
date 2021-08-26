@@ -590,14 +590,12 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                    InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
+                    InlineKeyboardButton("𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 🎶", callback_data="playlist"),
                 ],
                 [
-                    InlineKeyboardButton(text="❌ Close", callback_data="cls"),
-                    InlineKeyboardButton(text="📡 Download 📡", url=f"{dlurl}"),
+                    InlineKeyboardButton(text=" 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🏋🏻", url=f"{url}"),
                 ],
-                [InlineKeyboardButton(text="Support", url=f"https://t.me/{UPDATES_CHANNEL}")],
+                [InlineKeyboardButton(text="👀 𝗧𝗮𝗺𝗶𝗹 𝗕𝗼𝘁𝘀 👀", url=f"https://t.me/TamilSupport")],
             ]
         )
         requested_by = message.from_user.first_name
@@ -682,16 +680,14 @@ async def play(_, message: Message):
             dlurl=dlurl.replace("youtube","youtubepp")
             keyboard = InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                        InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
-                    ],
-                    [
-                        InlineKeyboardButton(text="❌ Close", callback_data="cls"),
-                        InlineKeyboardButton(text="📡 Download 📡", url=f"{dlurl}"),
-                    ],
-                    [InlineKeyboardButton(text="Support", url=f"https://t.me/{UPDATES_CHANNEL}")],
-                ]
+                [
+                    InlineKeyboardButton("𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 🎶", callback_data="playlist"),
+                ],
+                [
+                    InlineKeyboardButton(text=" 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🏋🏻", url=f"{url}"),
+                ],
+                [InlineKeyboardButton(text="👀 𝗧𝗮𝗺𝗶𝗹 𝗕𝗼𝘁𝘀 👀", url=f"https://t.me/TamilSupport")],
+            ]
             )
             requested_by = message.from_user.first_name
             await generate_cover(requested_by, title, views, duration, thumbnail)
@@ -840,16 +836,14 @@ async def ytplay(_, message: Message):
     dlurl=dlurl.replace("youtube","youtubepp")
     keyboard = InlineKeyboardMarkup(
         [
-            [
-                InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
-            ],
-            [
-                InlineKeyboardButton(text="❌ Close", callback_data="cls"),
-                InlineKeyboardButton(text="📡 Download 📡", url=f"{dlurl}"),
-            ],
-            [InlineKeyboardButton(text="Support", url=f"https://t.me/{UPDATES_CHANNEL}")],
-        ]
+                [
+                    InlineKeyboardButton("𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 🎶", callback_data="playlist"),
+                ],
+                [
+                    InlineKeyboardButton(text=" 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🏋🏻", url=f"{url}"),
+                ],
+                [InlineKeyboardButton(text="👀 𝗧𝗮𝗺𝗶𝗹 𝗕𝗼𝘁𝘀 👀", url=f"https://t.me/TamilSupport")],
+            ]
     )
     requested_by = message.from_user.first_name
     await generate_cover(requested_by, title, views, duration, thumbnail)
@@ -983,13 +977,14 @@ async def deezer(client: Client, message_: Message):
     
     keyboard = InlineKeyboardMarkup(
         [
-            [
-                InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
-            ],
-            [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
-            [InlineKeyboardButton(text="Support", url=f"https://t.me/{UPDATES_CHANNEL}")],
-        ]
+                [
+                    InlineKeyboardButton("𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 🎶", callback_data="playlist"),
+                ],
+                [
+                    InlineKeyboardButton(text=" 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🏋🏻", url=f"{url}"),
+                ],
+                [InlineKeyboardButton(text="👀 𝗧𝗮𝗺𝗶𝗹 𝗕𝗼𝘁𝘀 👀", url=f"https://t.me/TamilSupport")],
+            ]
     )
     file_path = await convert(wget.download(url))
     await res.edit("Generating Thumbnail")
@@ -1119,17 +1114,14 @@ async def jiosaavn(client: Client, message_: Message):
         pass    
     keyboard = InlineKeyboardMarkup(
         [
-            [
-                InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
-            ],
-            [
-                InlineKeyboardButton(
-                    text="Support", url=f"https://t.me/{UPDATES_CHANNEL}"
-                )
-            ],
-            [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
-        ]
+                [
+                    InlineKeyboardButton("𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 🎶", callback_data="playlist"),
+                ],
+                [
+                    InlineKeyboardButton(text=" 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🏋🏻", url=f"{url}"),
+                ],
+                [InlineKeyboardButton(text="👀 𝗧𝗮𝗺𝗶𝗹 𝗕𝗼𝘁𝘀 👀", url=f"https://t.me/TamilSupport")],
+            ]
     )
     file_path = await convert(wget.download(slink))
     chat_id = get_chat_id(message_.chat)
@@ -1228,16 +1220,14 @@ async def lol_cb(b, cb):
     dlurl=dlurl.replace("youtube","youtubepp")
     keyboard = InlineKeyboardMarkup(
         [
-            [
-                InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
-            ],
-            [
-                InlineKeyboardButton(text="❌ Close", callback_data="cls"),
-                InlineKeyboardButton(text="📡 Download 📡", url=f"{dlurl}"),
-            ],
-            [InlineKeyboardButton(text="Support", url=f"https://t.me/{UPDATES_CHANNEL}")],
-        ]
+                [
+                    InlineKeyboardButton("𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 🎶", callback_data="playlist"),
+                ],
+                [
+                    InlineKeyboardButton(text=" 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🏋🏻", url=f"{url}"),
+                ],
+                [InlineKeyboardButton(text="👀 𝗧𝗮𝗺𝗶𝗹 𝗕𝗼𝘁𝘀 👀", url=f"https://t.me/TamilSupport")],
+            ]
     )
     requested_by = useer_name
     await generate_cover(requested_by, title, views, duration, thumbnail)
